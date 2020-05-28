@@ -45,8 +45,7 @@ def build_model(spam_dict):
     return vectorizer, classifier
 
 
-def test_model(spam_test, test_path):
-    spam_dict = {}  #path for files for model to be trained on with classification goes here
+def test_model(spam_dict, spam_test, test_path):
     vectorizer, classifier = build_model(spam_dict)
     num_messages = 0
     correct_count = 0
